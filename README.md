@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue?logo=python)](https://www.python.org)
 [![Gradio](https://img.shields.io/badge/UI-Gradio%204.x-orange?logo=gradio)](https://gradio.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![CI](https://github.com/yourusername/AutoVideoCraft/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/AutoVideoCraft/actions)
+[![CI](https://github.com/jsoner-desiner/AutoVideoCraft/actions/workflows/ci.yml/badge.svg)](https://github.com/jsoner-desiner/AutoVideoCraft/actions)
 
 ---
 
@@ -63,7 +63,7 @@
 
 ```bash
 # 1. 克隆项目
-git clone https://github.com/yourusername/AutoVideoCraft.git
+git clone https://github.com/jsoner-desiner/AutoVideoCraft.git
 cd AutoVideoCraft
 
 # 2. 双击启动（自动安装依赖 + 打开浏览器）
@@ -73,7 +73,7 @@ start.bat
 ### macOS / Linux 用户
 
 ```bash
-git clone https://github.com/yourusername/AutoVideoCraft.git
+git clone https://github.com/jsoner-desiner/AutoVideoCraft.git
 cd AutoVideoCraft
 chmod +x start.sh
 ./start.sh
@@ -82,7 +82,7 @@ chmod +x start.sh
 ### 手动安装（进阶）
 
 ```bash
-git clone https://github.com/yourusername/AutoVideoCraft.git
+git clone https://github.com/jsoner-desiner/AutoVideoCraft.git
 cd AutoVideoCraft
 python -m venv .venv
 source .venv/bin/activate      # Windows: .venv\Scripts\activate
@@ -213,7 +213,7 @@ Model:    llama3.2
 
 ```bash
 # Fork & Clone
-git clone https://github.com/yourusername/AutoVideoCraft.git
+git clone https://github.com/jsoner-desiner/AutoVideoCraft.git
 
 # 创建功能分支
 git checkout -b feature/my-feature

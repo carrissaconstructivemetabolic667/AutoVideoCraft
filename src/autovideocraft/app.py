@@ -528,8 +528,8 @@ def build_ui() -> gr.Blocks:
                 MIT License · 欢迎 Star & PR
 
                 ### 链接
-                - [GitHub](https://github.com/yourusername/AutoVideoCraft)
-                - [问题反馈](https://github.com/yourusername/AutoVideoCraft/issues)
+                - [GitHub](https://github.com/jsoner-desiner/AutoVideoCraft)
+                - [问题反馈](https://github.com/jsoner-desiner/AutoVideoCraft/issues)
                 """)
 
     return demo

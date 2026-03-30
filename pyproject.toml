@@ -38,9 +38,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/AutoVideoCraft"
-Repository = "https://github.com/yourusername/AutoVideoCraft"
-Issues = "https://github.com/yourusername/AutoVideoCraft/issues"
+Homepage = "https://github.com/jsoner-desiner/AutoVideoCraft"
+Repository = "https://github.com/jsoner-desiner/AutoVideoCraft"
+Issues = "https://github.com/jsoner-desiner/AutoVideoCraft/issues"
 
 [project.scripts]
 autovideocraft = "autovideocraft.app:main"

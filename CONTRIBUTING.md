@@ -32,7 +32,7 @@ Use [Conventional Commits](https://www.conventionalcommits.org/):
 
 ## Reporting Issues
 
-Please use [GitHub Issues](https://github.com/yourusername/AutoVideoCraft/issues) and include:
+Please use [GitHub Issues](https://github.com/jsoner-desiner/AutoVideoCraft/issues) and include:
 - Your OS and Python version
 - Steps to reproduce the issue
 - Error message / log output
