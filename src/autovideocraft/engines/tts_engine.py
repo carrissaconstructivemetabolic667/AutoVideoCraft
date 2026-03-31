@@ -13,7 +13,7 @@ from loguru import logger
 
 import edge_tts
 from edge_tts import SubMaker
-from autovideocraft.utils import vtt_to_srt as _vtt_to_srt
+from autovideocraft.utils import vtt_to_srt as _vtt_to_srt, srt_to_vtt as _srt_to_vtt
 
 
 class TTSEngine:
@@ -55,14 +55,13 @@ class TTSEngine:
                 if chunk["type"] == "audio":
                     audio_file.write(chunk["data"])
                 elif chunk["type"] == "WordBoundary":
-                    sub_maker.create_sub(
-                        (chunk["offset"], chunk["duration"]),
-                        chunk["text"],
-                    )
+                    sub_maker.feed(chunk)
 
         # Save VTT subtitle if path provided
         if subtitle_path:
-            vtt_content = sub_maker.generate_subs()
+            # Get SRT and convert to VTT
+            srt_content = sub_maker.get_srt()
+            vtt_content = _srt_to_vtt(srt_content)
             with open(subtitle_path, "w", encoding="utf-8") as f:
                 f.write(vtt_content)
             logger.debug(f"VTT subtitle saved: {subtitle_path}")
@@ -71,7 +70,7 @@ class TTSEngine:
         srt_path = None
         if subtitle_path:
             srt_path = subtitle_path.replace(".vtt", ".srt")
-            srt_content = _vtt_to_srt(sub_maker.generate_subs())
+            srt_content = sub_maker.get_srt()
             with open(srt_path, "w", encoding="utf-8") as f:
                 f.write(srt_content)
 
