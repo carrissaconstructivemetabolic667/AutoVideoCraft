@@ -1,0 +1,31 @@
+{
+  "llm": {
+    "provider": "自定义 (Custom)",
+    "api_key": "YOUR_LLM_API_KEY",
+    "base_url": "https://api-inference.modelscope.cn/v1",
+    "model": "moonshotai/Kimi-K2.5"
+  },
+  "media": {
+    "pexels_api_key": "YOUR_PEXELS_API_KEY",
+    "pixabay_api_key": "YOUR_PIXABAY_API_KEY",
+    "preferred_source": "pexels",
+    "video_orientation": "portrait"
+  },
+  "tts": {
+    "voice": "zh-CN-XiaoxiaoNeural",
+    "rate": "+0%",
+    "volume": "+0%"
+  },
+  "video": {
+    "fps": 24,
+    "resolution": "1080x1920",
+    "subtitle_enabled": true,
+    "subtitle_font_size": 48,
+    "subtitle_color": "white",
+    "subtitle_stroke_color": "black",
+    "subtitle_stroke_width": 2,
+    "subtitle_position": "bottom",
+    "bg_music_enabled": false,
+    "bg_music_volume": 0.15
+  }
+}
